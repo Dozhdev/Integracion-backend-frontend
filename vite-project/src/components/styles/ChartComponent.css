@@ -1,0 +1,52 @@
+.chart-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 60px;
+}
+
+.slide-title {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(100, 181, 246, 0.5);
+}
+
+.chart-container-wrapper {
+  width: 85%;
+  height: 65%;
+  max-width: 750px;
+  background-color: rgba(30, 30, 30, 0.7);
+  border-radius: 16px;
+  border: 1px solid rgba(100, 181, 246, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bpm-display {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #64b5f6;
+  text-shadow: 0 0 8px rgba(100, 181, 246, 0.6);
+  display: flex;
+  align-items: baseline;
+}
+
+.bpm-unit {
+  font-size: 1rem;
+  margin-left: 5px;
+  color: rgba(255, 255, 255, 0.7);
+}

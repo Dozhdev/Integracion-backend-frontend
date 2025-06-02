@@ -1,0 +1,68 @@
+.project-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px 60px;
+  background-color: #000;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #64b5f6;
+  text-shadow: 0 0 10px rgba(100, 181, 246, 0.5);
+}
+
+.project-content {
+  width: 100%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: rgba(30, 30, 30, 0.7);
+  border-radius: 16px;
+  border: 1px solid rgba(100, 181, 246, 0.4);
+  padding: 25px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h2 {
+  color: #64b5f6;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.project-card p, 
+.project-card li {
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.project-card ul {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .project-content {
+    grid-template-columns: 1fr;
+  }
+}
